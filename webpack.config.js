@@ -6,7 +6,8 @@ module.exports = {
         filename: 'index.bundle.js',
     },
     devServer: {
-        port: 3010
+        port: 3010,
+        watchContentBase: true,
     },
     module: {
         rules: [
@@ -20,11 +21,11 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    'style-loader',
+                    MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'sass-loader'
-                ]
+                    'sass-loader',
+                ],
             }
-        ] 
-    }
-}
+        ]
+    },
+};
