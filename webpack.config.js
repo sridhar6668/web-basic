@@ -6,8 +6,7 @@ module.exports = {
         filename: 'index.bundle.js',
     },
     devServer: {
-        port: 3010,
-        watchContentBase: true,
+        port: 3010
     },
     module: {
         rules: [
