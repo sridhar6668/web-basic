@@ -10,12 +10,15 @@ module.exports = {
     devServer: {
         port: 3010
     },
+    resolve: {
+        extensions: ['.tsx', '.jsx', 'js' , '...']
+    },
     module: {
         rules: [
             {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
-                use: 'ts-loader',
+                use: ['babel-loader', 'ts-loader'],
             },
             {
                 test: /\.(js|jsx)$/,

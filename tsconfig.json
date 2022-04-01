@@ -1,11 +1,25 @@
 {
     "compilerOptions": {
       "outDir": "./dist/",
-      "noImplicitAny": true,
       "module": "es6",
       "target": "es5",
       "jsx": "react",
       "allowJs": true,
-      "moduleResolution": "node"
-    }
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "isolatedModules": true,
+      "resolveJsonModule": true,
+      // Type checking
+      "strict": true,
+      "allowUnreachableCode": false,
+      "allowUnusedLabels": false,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitOverride": true,
+      "noImplicitReturns": true,
+      "noPropertyAccessFromIndexSignature": true,
+      "noUncheckedIndexedAccess": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+    },
+    "include": ["src/**/*", "tests/**/*"]
 }
