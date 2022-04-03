@@ -11,12 +11,12 @@ module.exports = {
         port: 3010
     },
     resolve: {
-        extensions: ['.tsx', '.jsx', 'js' , '...']
+        extensions: ['.tsx', '.ts', '.jsx', 'js' , '...']
     },
     module: {
         rules: [
             {
-                test: /\.tsx?$/,
+                test: /\.(ts|tsx)$/,
                 exclude: /node_modules/,
                 use: ['babel-loader', 'ts-loader'],
             },
