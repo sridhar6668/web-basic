@@ -3,7 +3,7 @@ import { IItem } from './IItem';
 
 let lastId = 0;
 export default function reducer(state: IItem[] = [], action?: any): IItem[] {
-    switch(action.type) {
+    switch(action?.type) {
         case ActionType.BugAdded:
             return [
                 ...state,
