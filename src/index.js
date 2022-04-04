@@ -1,6 +1,6 @@
 require('file-loader?name=[name].[ext]!./index.html');
 import store from './store/Store';
-import actions from './store/actions/Actions';
+import { addBug, removeBug, resolveBug  } from './store/Bugs/Slice';
 /*
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -13,8 +13,8 @@ ReactDOM.render(<App />, appElement);
 const unsubscribe = store.subscribe(() => {
     console.log("Store changed.", store.getState());
 });
-store.dispatch(actions.addBug("First bug")); 
-store.dispatch(actions.addBug("Second bug"));
-store.dispatch(actions.removeBug(1));
-store.dispatch(actions.resolveBug  (2));
+store.dispatch(addBug({ description: "First bug" })); 
+store.dispatch(addBug({ description: "Second bug" }));
+store.dispatch(removeBug({ id : 1 }));
+store.dispatch(resolveBug ({ id: 2}));
 console.log(store.getState());
