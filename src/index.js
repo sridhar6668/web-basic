@@ -1,6 +1,6 @@
 require('file-loader?name=[name].[ext]!./index.html');
-import store from './redux/Store';
-import actions from './redux/actions/Actions';
+import store from './store/Store';
+import actions from './store/actions/Actions';
 /*
 import React from 'react';
 import ReactDOM from 'react-dom';
