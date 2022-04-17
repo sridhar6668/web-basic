@@ -1,5 +1,6 @@
 export interface IBugItem {
     id: number;
     description: string;
-    resolved: boolean
+    resolved: boolean;
+    assignedToMemberId: number;
 } 
