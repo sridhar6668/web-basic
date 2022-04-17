@@ -1,4 +1,4 @@
-export interface IItem {
+export interface IBugItem {
     id: number;
     description: string;
     resolved: boolean

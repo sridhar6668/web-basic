@@ -4,7 +4,7 @@
   "description": "This is a test website",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack serve --mode development",
+    "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "builddev": "webpack --mode development"
   },

@@ -1,9 +1,9 @@
-import { IItem } from '../IItem';
+import { IBugItem } from './IBugItem';
 import { createSlice } from '@reduxjs/toolkit';
 let lastId = 0;
 
 interface IState {
-    bugs: IItem[];
+    bugs: IBugItem[];
 }
 const initialState: IState = { bugs: [] };
 const bugSlice = createSlice({
