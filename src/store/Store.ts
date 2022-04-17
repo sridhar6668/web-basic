@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import bugReducer from './Bugs/Slice';
+import bugReducer from './bugs/Slice';
 import projectReducer from './projects/Slice';
 
 const store = configureStore({ 

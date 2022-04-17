@@ -1,6 +1,6 @@
 require('file-loader?name=[name].[ext]!./index.html');
 import store from './store/Store';
-import { addBug, removeBug, resolveBug  } from './store/Bugs/Slice';
+import { addBug, removeBug, resolveBug  } from './store/bugs/Slice';
 import { addProject, removeProject } from './store/projects/Slice';
 /*
 import React from 'react';
